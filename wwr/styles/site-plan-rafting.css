@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Font+Name&family=Optional+2nd+Font+Name&display=swap');
 
 
 :root {
@@ -8,7 +8,7 @@
   --accent1-color: #54f2f2;
   --accent2-color: #fcfcfc;
 
-  --heading-font: "IM Fell French Canon", Sans-serif;
+  --font-family: "IM Fell French Canon", serif;
   --paragraph-font: helvetica, serif;
 
   --nav-background-color: #b8d8ba;
@@ -21,7 +21,7 @@
 body  {
     font-family: var(--paragraph-font);
     color: var(--paragraph-color-on-white);
-    background-color: var(--primary-color);
+    background-color: var(--secondary-color);
     padding: 1em;
     text-align: center;
     max-width: 960px;
