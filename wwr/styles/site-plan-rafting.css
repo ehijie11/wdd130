@@ -1,0 +1,72 @@
+
+@import url('https://fonts.googleapis.com/css2?family=font-name&family=optional-2nd-font-name&display=swap');
+
+
+:root {
+  --primary-color: #042a2b;
+  --secondary-color: #5eb1bf;
+  --accent1-color: #54f2f2;
+  --accent2-color: #fcfcfc;
+
+  --heading-font: "IM Fell French Canon", Sans-serif;
+  --paragraph-font: helvetica, serif;
+
+  --nav-background-color: #b8d8ba;
+  --nav-link-color: #282912;
+  --nav-hover-link-color: #fcddbc;
+  --nav-hover-background-color: #ef959d;
+}
+
+
+body  {
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-color-on-white);
+    background-color: var(--primary-color);
+    padding: 1em;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 4em;
+    font-size: 18px;
+  }
+
+        
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--paragraph-color-on-white);
+}
+
+
+header {
+  padding: 10px;
+  background-color: var(--accent1-color);
+  text-align: center;
+}
+
+
+p {
+  padding: 1em;
+}
+
+
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
