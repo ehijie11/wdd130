@@ -1,169 +1,281 @@
-
-/* if you are using any Google fonts change the font names below to your fonts. 
-Any spaces in your font name should be replaced with a +. 
-Fonts are separated by a & */
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Rock+Salt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
 :root {
-  /* change the values below to your colors from your palette */
-  /* --primary-color: #FC5130   ;
-  --secondary-color: #E7C24F ;
-  --accent1-color: #A42212;
-  --accent2-color: white; */
-  --primary-color: #FC5130   ;
-  --secondary-color: #303036 ;
-  --accent1-color: #B48291;
-  --accent2-color: #FFFAFF;
+    --primary-color: #0073e6;
+    --secondary-color: #8B4513;
+    --accent1-color: #00AA9A;
+    --accent2-color: #F5F5F5;
 
-  /* change the values below to your chosen font(s) */
-  --heading-font: "Rock Salt";
-  --paragraph-font: Roboto, Helvetica, sans-serif;
+    --heading-font: Monteserrat, serif;
+    --paragraph-font: Roboto , serif;
 
-  /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: #FC5130;  /* headlines on a white background */ 
-  --headline-color-on-color: white; /* headlines on a colored background */ 
-  --paragraph-color-on-white: #FC5130; /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: #FC5130  ;
-  --nav-link-color: #FFFAFF;
-  --nav-background-color: #303036;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #FC5130;
+    --nav-background-color: #F5F5F5;
+    --nav-link-color: #00AA9A;
+    --nav-hover-link-color: #0073e6;
+    --nav-hover-background-color: #421778;
 }
 
-
-/*  Look around below...but DON'T CHANGE ANYTHING! */
-
-body {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 4em;
-  font-size: 18px;
-  text-align: center;
-}
-img {
-  display: block;
-  margin: 0 auto;
-  max-width: 300px;
-}
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--heading-font);
-  color: var(--headline-color-on-white);
-}
-h2 {
-  text-align: center;
-}
-hr {
-  height: 3px;
-  margin: 35px 0;
-  background: var(--accent1-color);
-}
-header {
-  padding: 1em;
-  text-align: center;
-  color: var(--headline-color-on-color);
-  background-color: var(--paragraph-background-color);
-}
-header > h1, header > h2 {
-  color: var(--headline-color-on-color);
+h1, h2, h3 {
+    font-family: var(--paragraph-font);
+    color: var(--primary-color); 
 }
 p {
-  font-family: var(--paragraph-font);
-  color: var(--paragraph-color-on-white);
-  padding: 1em;
+    font-family: var(--paragraph-font);
+    color: black;
 }
-.colors {
-  width: 100%;
-  min-width: 350px;
-  margin: 30px auto;
-  text-align: center;
+footer a {
+    text-decoration: none;
 }
-.colors th {
-  background-color: #999;
-}
-.colors td{
-  width: 25%;
-  height: 3em;
-}
-.primary {
-  background-color: var(--primary-color);
-}
-.secondary {
-  background-color: var(--secondary-color);
-  color: #FFFAFF;
-}
-.accent1 {
-  background-color: var(--accent1-color);
-}
-.accent2{
-  background-color: var(--accent2-color);
-}
-p.colored {
-  background-color: var(--paragraph-background-color);
-  color: var(--paragraph-color-on-color);
-}
-nav {
-  background-color: var(--nav-background-color);
-  line-height: 3em;
-  text-align: center;
-  font-size: 1.2em;
-}
-nav  {
-  list-style-type: none;
-  display: flex;
-}
-nav a {
-  padding:1em;
-  min-width: 120px;
-  text-decoration: none;
-  padding: 10px;
-}
-nav a:link, nav a:visited {
-  color: var(--nav-link-color);
-}
-nav a:hover {
-  color: var(--nav-hover-link-color);
-  background-color: var(--nav-hover-background-color);
-}
-.sitemap {
-  display: grid;
-  justify-content: center;
 
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
+body {
+    max-width: 1200px;
+    margin: 0 auto; 
 }
-.sitemap > div {
-  text-align: center;
+.hero {
+    position: relative;
 }
-.sm-home {
-  grid-area: home;
-  background-color: #ccc;
-  line-height: 3em;
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    
 }
-.sm-page2 {
-  grid-area: page2;
-  background-color: #ccc;
-  line-height: 3em;
+.hero h1 {
+    position: absolute;
+    top: 20px; 
+    left: 20px; 
 }
-.sm-page3 {
-  grid-area: page3;
-  background-color: #ccc;
-  line-height: 3em;
+
+
+
+.hero article {
+    position: absolute;
+    top: 100px; 
+    left: 20px; 
+    width: 300px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px; 
 }
-.top {
-  grid-area: top;
-  border-left: 1px solid;
+
+
+.hero article img {
+    float: right;
+    margin-left: 20px; 
 }
-.left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
+
+header {
+    display: grid;
+    grid-template-columns: 120px 2fr;
+    align-items: center;
+    border-bottom: 1px solid var(--primary-color);
+    max-width: 100%;
+    background-color: var(--nav-hover-background-color);
+}   
+
+header img {
+    margin: 0 0.3rem 0 1rem;
+    width: 100px;
+    height: auto;
 }
-.right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
+
+header nav {
+    display: flex;
+    flex: 1 1 100%;
+    text-align: right;
+}
+ header nav a {
+    display: block;
+    color: var(--nav-background-color);
+    padding: 20px;
+    text-decoration: none;
+ }
+ header nav a:hover {
+    color: var(--nav-link-color);
+    font-weight: 700;
+    text-decoration: underline;
+ } 
+
+
+/* Create a grid layout for the history section */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr; 
+    gap: 20px; 
+    max-width: 1200px; 
+}
+
+
+.history h2 {
+    grid-column: 1 / span 3; 
+    text-align: center; 
+}
+
+.history img {
+    grid-column: 2 / 3; 
+    width: 100%; 
+}
+
+
+.history p {
+    grid-column: 1 / span 3; 
+}
+
+/* Style the adventures section */
+.adventures {
+    text-align: center; 
+    padding: 20px;
+}
+
+/* Style the image container */
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+}
+
+/* Style individual figures (each containing an image and caption) */
+.image-container figure {
+    flex-basis: calc(20% - 10px); 
+    text-align: center;
+}
+
+/* Style images within figures */
+.image-container img {
+    max-width: 100%; 
+}
+
+/* Style captions within figures */
+.image-container figcaption {
+    margin-top: 0px; 
+}
+
+
+fieldset {
+    display: grid;
+    grid-gap: .5rem;
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+
+/* Add the following styles to your existing CSS */
+.contact-info {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+.contact-info legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: navy;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.contact-item img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.contact-item p {
+    font-size: 1.2em;
+    color: #333;
+}
+
+/* Style the iframe to remove border and set a width */
+iframe {
+    border: none;
+    width: 100%;
+    height: 200px;
+}
+
+
+
+
+
+
+label, input, button, select, textarea {
+    font-family: Arial, Helvetica, sans-serif;
+}
+legend{
+    padding: 0.5rem;
+    color: navy;
+    font-size: 1.3em;
+}
+label {
+    display: block;
+    font-weight: bold;
+}
+
+textarea, select, input[type="text"] {
+    width: 100%;
+    padding: 5px;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+.center-button {
+    text-align: center; 
+}
+button[type="submit"] {
+    background-color: navy;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: .5rem;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 200px;
+    margin: 0 auto;
+}
+
+
+button[type="submit"]:hover {
+    background-color: navy;
+}
+
+footer {
+    background-color: #fff;
+    color: rgb(101, 8, 78);
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    border-top: 1px solid #333;
+}
+
+
+
+
+/* Style the footer */
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: var(--nav-hover-background-color); 
+    color: var(--nav-background-color); 
+    padding: 10px 20px; 
+}
+
+/* Style the social icons container */
+.social-icons {
+    display: flex; 
+    gap: 10px; 
+}
+
+/* Style the social icons (images) */
+.social-icons a img {
+    max-width: 30px; 
 }
