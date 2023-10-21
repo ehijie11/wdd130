@@ -14,9 +14,9 @@ label {
 
 input, textarea, select {
     width: 100%;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid #ccc;
+    border: 1px solid #ccc;
     border-radius: 5px;
 }
 
@@ -31,3 +31,4 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
