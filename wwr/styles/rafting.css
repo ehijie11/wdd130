@@ -22,7 +22,7 @@ h1, h2, h3 {
 
 p {
     font-family: var(--paragraph-font);
-    color: #030303; /* Improved contrast for readability */
+    color: #000000; /* Improved contrast for readability */
 }
 
 footer a {
