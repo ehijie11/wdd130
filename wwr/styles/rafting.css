@@ -14,7 +14,12 @@
     --nav-hover-background-color: #a12486;
 }
 
-h1, h2, h3 {
+h1 {
+    color: white; 
+    
+}
+
+h2, h3 {
     font-family: var(--paragraph-font);
     color: var(--primary-color); 
 }
@@ -175,7 +180,7 @@ button:hover {
 }
 
 .image-class {
-    width: 400px; /* Replace 300px with your desired width value */
+    width: 00px; /* Replace 300px with your desired width value */
 }
 
 
@@ -318,7 +323,9 @@ footer {
     border-top: 1px solid #333;
 }
 
-
+footer p {
+color: white;
+}
 
 
 /* Style the footer */
