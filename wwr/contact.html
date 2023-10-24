@@ -77,28 +77,18 @@
                   
                   <label for="email">Your Email:</label>
                   <input type="email" id="email" name="email" required>
-                  <div class="purpose">
-                    <div>Purpose of Message:</div>
-                    <input type="radio" name="purpose" id="general">
-                    <label for="general">General Inquiry</label>
-                    <br>
-                    <input type="radio" name="purpose" id="reservation">
-                    <label for="reservation">Reservation Question</label>
-                    <br>
-      
-                    <input type="radio" name="purpose" id="suggestions">
-                    <label for="suggestions">Website Suggestion</label>
-                  </div>
+                  <label for="purpose">Purpose of Message:</label>
+                    <div id="purpose">
+                        <input type="radio" id="inquiry" name="purpose" value="General Inquiry">
+                        <label for="inquiry">General Inquiry</label><br>
 
-              
-                  <label for="message">Your Message:</label>
-                  <textarea id="message" name="message" rows="4" required></textarea>
-              
-                  <div class="subscribe">
-                    <label for="subscribe">Please subscribe me to the monthly newsletter</label>
-                    <input type="checkbox" id="subscribe" name="subscribe">
-                    <button type="submit" class="center-button">Click to Proceed</button>
-                  </div>
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question">
+                        <label for="reservation">Reservation Question</label><br>
+
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion">
+                        <label for="suggestion">Website Suggestion</label><br>
+                    </div>
+                </fieldset>
               
               
             </form>
